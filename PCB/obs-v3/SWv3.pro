@@ -1,4 +1,4 @@
-update=Tue 25 Apr 2017 01:06:10 PM EDT
+update=Tue 25 Apr 2017 03:24:55 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../kicad/libraries
 [eeschema/libraries]
 LibName1=SWv3-rescue
 LibName2=power
@@ -59,10 +59,10 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=/home/benbroce/Desktop/kicad/libraries/drv2605l
-LibName32=/home/benbroce/Desktop/kicad/libraries/kicad-ESP8266-master/ESP8266
-LibName33=/home/benbroce/Desktop/kicad/libraries/mcp73831-2
-LibName34=/home/benbroce/Desktop/kicad/libraries/mcp73871
-LibName35=/home/benbroce/Desktop/kicad/libraries/ER-OLED
-LibName36=/home/benbroce/Desktop/kicad/libraries/FTDI
-LibName37=/home/benbroce/Desktop/kicad/libraries/fan5331
+LibName31=/home/benbroce/Desktop/espwatch/PCB/kicad/libraries/drv2605l
+LibName32=/home/benbroce/Desktop/espwatch/PCB/kicad/libraries/kicad-ESP8266-master/ESP8266
+LibName33=/home/benbroce/Desktop/espwatch/PCB/kicad/libraries/mcp73831-2
+LibName34=/home/benbroce/Desktop/espwatch/PCB/kicad/libraries/mcp73871
+LibName35=/home/benbroce/Desktop/espwatch/PCB/kicad/libraries/ER-OLED
+LibName36=/home/benbroce/Desktop/espwatch/PCB/kicad/libraries/FTDI
+LibName37=/home/benbroce/Desktop/espwatch/PCB/kicad/libraries/fan5331
