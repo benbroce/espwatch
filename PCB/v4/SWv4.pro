@@ -1,4 +1,4 @@
-update=Tue 25 Apr 2017 03:46:41 PM EDT
+update=Tue 25 Apr 2017 04:09:17 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,9 +23,11 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../kicad/libraries
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -56,5 +58,7 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=/home/benbroce/Desktop/espwatch/PCB/kicad/libraries/ESP32-kiCAD-Footprints/ESP32-Footprints/ESP32-footprints-Shem-Lib
+LibName31=ESP32-kiCAD-Footprints/ESP32-Footprints/espressif-xess
+LibName32=drv2605l
+LibName33=ER-OLED
