@@ -1,5 +1,5 @@
 EESchema Schematic File Version 2
-LIBS:lm3671
+LIBS:SWv3-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -34,7 +34,6 @@ LIBS:ESP8266
 LIBS:mcp73831-2
 LIBS:mcp73871
 LIBS:ER-OLED
-LIBS:uSD
 LIBS:FTDI
 LIBS:fan5331
 LIBS:SWv3-cache
@@ -194,7 +193,7 @@ F 3 "" H 4900 2050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L USB_OTG P?
+L USB_OTG-RESCUE-SWv3 P?
 U 1 1 56A485B5
 P 950 2000
 F 0 "P?" H 1275 1875 50  0000 C CNN
