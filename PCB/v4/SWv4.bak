@@ -703,7 +703,9 @@ Wire Wire Line
 Wire Wire Line
 	10700 1200 10700 1150
 Wire Wire Line
-	10350 700  10350 900 
+	10350 700  10350 750 
+Wire Wire Line
+	10350 750  10350 900 
 Connection ~ 10350 750 
 Wire Wire Line
 	10900 750  11100 750 
@@ -716,7 +718,11 @@ Wire Wire Line
 Wire Wire Line
 	10250 2650 9400 2650
 Wire Wire Line
-	9400 2550 9400 2800
+	9400 2550 9400 2650
+Wire Wire Line
+	9400 2650 9400 2750
+Wire Wire Line
+	9400 2750 9400 2800
 Wire Wire Line
 	10250 2550 9400 2550
 Connection ~ 9400 2650
@@ -758,7 +764,9 @@ Wire Wire Line
 Wire Wire Line
 	1050 800  1350 800 
 Wire Wire Line
-	1350 750  1350 850 
+	1350 750  1350 800 
+Wire Wire Line
+	1350 800  1350 850 
 Connection ~ 1350 800 
 Wire Wire Line
 	5100 6650 5100 6700
@@ -793,7 +801,9 @@ Wire Wire Line
 Wire Wire Line
 	6100 7350 6100 7300
 Wire Wire Line
-	8400 5600 8400 6000
+	8400 5600 8400 5800
+Wire Wire Line
+	8400 5800 8400 6000
 Connection ~ 8400 5800
 Wire Wire Line
 	8400 5600 8600 5600
@@ -806,7 +816,9 @@ Wire Wire Line
 Wire Wire Line
 	9300 5800 9300 5450
 Wire Wire Line
-	9000 5450 9350 5450
+	9000 5450 9300 5450
+Wire Wire Line
+	9300 5450 9350 5450
 Connection ~ 9300 5450
 Wire Wire Line
 	9300 5900 9400 5900
@@ -817,7 +829,13 @@ Wire Wire Line
 Wire Wire Line
 	9700 6000 9300 6000
 Wire Wire Line
-	9550 5450 10750 5450
+	9550 5450 9700 5450
+Wire Wire Line
+	9700 5450 9950 5450
+Wire Wire Line
+	9950 5450 10300 5450
+Wire Wire Line
+	10300 5450 10750 5450
 Wire Wire Line
 	10300 5450 10300 5650
 Wire Wire Line
@@ -825,7 +843,9 @@ Wire Wire Line
 Wire Wire Line
 	10750 6300 10750 6150
 Wire Wire Line
-	10750 5400 10750 5850
+	10750 5400 10750 5450
+Wire Wire Line
+	10750 5450 10750 5850
 Connection ~ 10750 5450
 Connection ~ 10300 5450
 Text Notes 8450 6400 0    60   ~ 0
@@ -845,7 +865,9 @@ Wire Wire Line
 Connection ~ 9700 5450
 Connection ~ 9950 5450
 Wire Wire Line
-	9700 5800 9700 6000
+	9700 5800 9700 5850
+Wire Wire Line
+	9700 5850 9700 6000
 Wire Wire Line
 	9700 5850 9950 5850
 Wire Wire Line
@@ -981,4 +1003,42 @@ Text Notes 9650 650  0    60   ~ 0
 Haptics
 Wire Wire Line
 	9250 900  8600 900 
+Text GLabel 4700 2700 0    60   Input ~ 0
+BTN-TL
+Text GLabel 4700 2850 0    60   Input ~ 0
+BTN-BL
+Text GLabel 4700 3000 0    60   Input ~ 0
+BTN-TR
+Text GLabel 4700 3150 0    60   Input ~ 0
+BTN-BR
+Text GLabel 4700 3450 0    60   Input ~ 0
+CS(SD)
+Text GLabel 4700 3600 0    60   Input ~ 0
+MOSI
+Text GLabel 4700 3750 0    60   Input ~ 0
+SCLK
+Text GLabel 4700 3900 0    60   Input ~ 0
+MISO
+Text GLabel 4700 4050 0    60   Input ~ 0
+CS(OLED)
+Text GLabel 4700 4200 0    60   Input ~ 0
+RST(OLED)
+Text GLabel 4700 4350 0    60   Input ~ 0
+D/C
+Text GLabel 4700 4600 0    60   Input ~ 0
+SCL
+Text GLabel 4700 4750 0    60   Input ~ 0
+SDA
+Text GLabel 1500 2600 1    60   Input ~ 0
+TXD
+Text GLabel 1600 2600 1    60   Input ~ 0
+RXD
+Text Notes 650  6250 0    60   ~ 0
+SD Card (SPI) - SD Interface Compat. ?
+Text GLabel 4700 5000 0    60   Input ~ 0
+TXD
+Text GLabel 4700 5150 0    60   Input ~ 0
+RXD
+Text Notes 750  2000 0    60   ~ 0
+USB interface (Serial / PWR)
 $EndSCHEMATC
