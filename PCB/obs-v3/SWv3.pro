@@ -1,4 +1,4 @@
-update=Tue 25 Apr 2017 03:24:55 PM EDT
+update=Fri 28 Apr 2017 09:36:47 AM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../kicad/libraries
@@ -66,3 +64,5 @@ LibName34=/home/benbroce/Desktop/espwatch/PCB/kicad/libraries/mcp73871
 LibName35=/home/benbroce/Desktop/espwatch/PCB/kicad/libraries/ER-OLED
 LibName36=/home/benbroce/Desktop/espwatch/PCB/kicad/libraries/FTDI
 LibName37=/home/benbroce/Desktop/espwatch/PCB/kicad/libraries/fan5331
+[general]
+version=1

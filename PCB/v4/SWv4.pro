@@ -1,4 +1,4 @@
-update=Thu 27 Apr 2017 06:44:37 PM EDT
+update=Fri 28 Apr 2017 09:43:05 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=../kicad/libraries
@@ -62,5 +64,6 @@ LibName32=drv2605l
 LibName33=ER-OLED
 LibName34=switches
 LibName35=cp2102
-[general]
-version=1
+LibName36=fan5331
+LibName37=battery_management
+LibName38=micro_sd_card_spi
