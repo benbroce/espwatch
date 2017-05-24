@@ -1,4 +1,4 @@
-update=Tue 23 May 2017 09:46:33 AM EDT
+update=Tue 23 May 2017 09:36:17 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../kicad/libraries
@@ -69,3 +67,5 @@ LibName37=micro_sd_card_spi
 LibName38=cp210x
 LibName39=mcp73831-2
 LibName40=AP2112
+[general]
+version=1
