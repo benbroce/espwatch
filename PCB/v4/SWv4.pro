@@ -1,4 +1,4 @@
-update=Fri 28 Apr 2017 09:43:05 PM EDT
+update=Tue 23 May 2017 09:46:33 AM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,7 +63,9 @@ LibName31=ESP32-kiCAD-Footprints/ESP32-Footprints/espressif-xess
 LibName32=drv2605l
 LibName33=ER-OLED
 LibName34=switches
-LibName35=cp2102
-LibName36=fan5331
-LibName37=battery_management
-LibName38=micro_sd_card_spi
+LibName35=fan5331
+LibName36=battery_management
+LibName37=micro_sd_card_spi
+LibName38=cp210x
+LibName39=mcp73831-2
+LibName40=AP2112
