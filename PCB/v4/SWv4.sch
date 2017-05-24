@@ -55,17 +55,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ESP32-WROOM U?
-U 1 1 58FFAC78
-P 5900 4050
-F 0 "U?" H 5200 5300 60  0000 C CNN
-F 1 "ESP32-WROOM" H 6400 5300 60  0000 C CNN
-F 2 "ESP32-footprints-Lib:ESP32-WROOM" H 6250 5400 60  0001 C CNN
-F 3 "" H 5450 4500 60  0001 C CNN
-	1    5900 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L DRV2605L U?
 U 1 1 58FFAE76
 P 9800 1100
@@ -508,42 +497,42 @@ NoConn ~ 10250 4350
 $Comp
 L GND #PWR029
 U 1 1 5904844F
-P 2850 7300
-F 0 "#PWR029" H 2850 7050 50  0001 C CNN
-F 1 "GND" H 2850 7150 50  0000 C CNN
-F 2 "" H 2850 7300 50  0001 C CNN
-F 3 "" H 2850 7300 50  0001 C CNN
-	1    2850 7300
+P 2950 7300
+F 0 "#PWR029" H 2950 7050 50  0001 C CNN
+F 1 "GND" H 2950 7150 50  0000 C CNN
+F 2 "" H 2950 7300 50  0001 C CNN
+F 3 "" H 2950 7300 50  0001 C CNN
+	1    2950 7300
 	1    0    0    -1  
 $EndComp
 $Comp
 L +3V3 #PWR030
 U 1 1 590485E3
-P 2850 6800
-F 0 "#PWR030" H 2850 6650 50  0001 C CNN
-F 1 "+3V3" H 2850 6940 50  0000 C CNN
-F 2 "" H 2850 6800 50  0001 C CNN
-F 3 "" H 2850 6800 50  0001 C CNN
-	1    2850 6800
+P 2950 6800
+F 0 "#PWR030" H 2950 6650 50  0001 C CNN
+F 1 "+3V3" H 2950 6940 50  0000 C CNN
+F 2 "" H 2950 6800 50  0001 C CNN
+F 3 "" H 2950 6800 50  0001 C CNN
+	1    2950 6800
 	1    0    0    -1  
 $EndComp
 Text GLabel 2350 7050 2    60   Input ~ 0
-SCLK
+SCLK(SD)
 Text GLabel 2350 6850 2    60   Input ~ 0
-MOSI
+MOSI(SD)
 Text GLabel 2350 7250 2    60   Input ~ 0
-MISO
+MISO(SD)
 Text GLabel 2350 6750 2    60   Input ~ 0
 CS(SD)
 $Comp
 L C C?
 U 1 1 5904914F
-P 2850 7050
-F 0 "C?" H 2875 7150 50  0000 L CNN
-F 1 "10uF" H 2875 6950 50  0000 L CNN
-F 2 "" H 2888 6900 50  0001 C CNN
-F 3 "" H 2850 7050 50  0001 C CNN
-	1    2850 7050
+P 2950 7050
+F 0 "C?" H 2975 7150 50  0000 L CNN
+F 1 "10uF" H 2975 6950 50  0000 L CNN
+F 2 "" H 2988 6900 50  0001 C CNN
+F 3 "" H 2950 7050 50  0001 C CNN
+	1    2950 7050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -610,15 +599,15 @@ Text GLabel 4700 3000 0    60   Input ~ 0
 BTN-TR
 Text GLabel 4700 3150 0    60   Input ~ 0
 BTN-BR
-Text GLabel 4300 3400 0    60   Input ~ 0
+Text GLabel 6250 5100 3    60   Input ~ 0
 CS(SD)
-Text GLabel 4300 3550 0    60   Input ~ 0
-MOSI
-Text GLabel 4300 3700 0    60   Input ~ 0
-SCLK
-Text GLabel 4300 3850 0    60   Input ~ 0
-MISO
-Text GLabel 4300 4000 0    60   Input ~ 0
+Text GLabel 5550 5100 3    60   Input ~ 0
+MOSI(SD)
+Text GLabel 4950 4550 0    60   Input ~ 0
+SCLK(SD)
+Text GLabel 4950 4650 0    60   Input ~ 0
+MISO(SD)
+Text GLabel 4100 3850 0    60   Input ~ 0
 CS(OLED)
 Text GLabel 4300 4150 0    60   Input ~ 0
 RST(OLED)
@@ -654,12 +643,12 @@ $EndComp
 $Comp
 L GND #PWR?
 U 1 1 5904C8AB
-P 5450 5150
-F 0 "#PWR?" H 5450 4900 50  0001 C CNN
-F 1 "GND" H 5450 5000 50  0000 C CNN
-F 2 "" H 5450 5150 50  0001 C CNN
-F 3 "" H 5450 5150 50  0001 C CNN
-	1    5450 5150
+P 5200 5150
+F 0 "#PWR?" H 5200 4900 50  0001 C CNN
+F 1 "GND" H 5200 5000 50  0000 C CNN
+F 2 "" H 5200 5150 50  0001 C CNN
+F 3 "" H 5200 5150 50  0001 C CNN
+	1    5200 5150
 	1    0    0    -1  
 $EndComp
 Text GLabel 9250 1300 0    60   Input ~ 0
@@ -1163,7 +1152,7 @@ L R R?
 U 1 1 59244BC6
 P 3550 950
 F 0 "R?" V 3630 950 50  0000 C CNN
-F 1 "???K" V 3550 950 50  0000 C CNN
+F 1 "4.7K" V 3550 950 50  0000 C CNN
 F 2 "" V 3480 950 50  0001 C CNN
 F 3 "" H 3550 950 50  0001 C CNN
 	1    3550 950 
@@ -1181,7 +1170,7 @@ F 3 "" H 3550 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3550 800  0    60   ~ 0
-Ref Ada\n(Link GNDs?)
+Ada Ref (200mA rate)\n(Link GNDs?)
 $Comp
 L GND #PWR?
 U 1 1 59245348
@@ -1394,7 +1383,9 @@ Wire Wire Line
 Wire Wire Line
 	10700 1200 10700 1150
 Wire Wire Line
-	10350 700  10350 900 
+	10350 700  10350 750 
+Wire Wire Line
+	10350 750  10350 900 
 Connection ~ 10350 750 
 Wire Wire Line
 	10900 750  11100 750 
@@ -1407,7 +1398,11 @@ Wire Wire Line
 Wire Wire Line
 	10250 2650 9400 2650
 Wire Wire Line
-	9400 2550 9400 2800
+	9400 2550 9400 2650
+Wire Wire Line
+	9400 2650 9400 2750
+Wire Wire Line
+	9400 2750 9400 2800
 Wire Wire Line
 	10250 2550 9400 2550
 Connection ~ 9400 2650
@@ -1449,10 +1444,14 @@ Wire Wire Line
 Wire Wire Line
 	1050 800  1350 800 
 Wire Wire Line
-	1350 750  1350 850 
+	1350 750  1350 800 
+Wire Wire Line
+	1350 800  1350 850 
 Connection ~ 1350 800 
 Wire Wire Line
-	8400 5600 8400 6000
+	8400 5600 8400 5800
+Wire Wire Line
+	8400 5800 8400 6000
 Connection ~ 8400 5800
 Wire Wire Line
 	8400 5600 8600 5600
@@ -1465,7 +1464,9 @@ Wire Wire Line
 Wire Wire Line
 	9300 5800 9300 5450
 Wire Wire Line
-	9000 5450 9350 5450
+	9000 5450 9300 5450
+Wire Wire Line
+	9300 5450 9350 5450
 Connection ~ 9300 5450
 Wire Wire Line
 	9300 5900 9400 5900
@@ -1476,7 +1477,13 @@ Wire Wire Line
 Wire Wire Line
 	9700 6000 9300 6000
 Wire Wire Line
-	9550 5450 10750 5450
+	9550 5450 9700 5450
+Wire Wire Line
+	9700 5450 9950 5450
+Wire Wire Line
+	9950 5450 10300 5450
+Wire Wire Line
+	10300 5450 10750 5450
 Wire Wire Line
 	10300 5450 10300 5650
 Wire Wire Line
@@ -1484,7 +1491,9 @@ Wire Wire Line
 Wire Wire Line
 	10750 6300 10750 6150
 Wire Wire Line
-	10750 5400 10750 5850
+	10750 5400 10750 5450
+Wire Wire Line
+	10750 5450 10750 5850
 Connection ~ 10750 5450
 Connection ~ 10300 5450
 Wire Wire Line
@@ -1500,28 +1509,18 @@ Wire Wire Line
 Connection ~ 9700 5450
 Connection ~ 9950 5450
 Wire Wire Line
-	9700 5800 9700 6000
+	9700 5800 9700 5850
+Wire Wire Line
+	9700 5850 9700 6000
 Wire Wire Line
 	9700 5850 9950 5850
 Wire Wire Line
 	9950 5850 9950 5800
 Connection ~ 9700 5850
 Wire Wire Line
-	2350 6950 2700 6950
+	2350 6950 2900 6950
 Wire Wire Line
-	2700 6950 2700 6900
-Wire Wire Line
-	2700 6900 2850 6900
-Wire Wire Line
-	2350 7150 2700 7150
-Wire Wire Line
-	2700 7150 2700 7200
-Wire Wire Line
-	2700 7200 2850 7200
-Wire Wire Line
-	2850 7200 2850 7300
-Wire Wire Line
-	2850 6900 2850 6800
+	2350 7150 2900 7150
 Wire Wire Line
 	10350 750  10600 750 
 Wire Wire Line
@@ -1529,12 +1528,12 @@ Wire Wire Line
 Wire Wire Line
 	6800 4600 6900 4600
 Wire Wire Line
-	6900 4600 6900 4750
+	6900 4600 6900 4700
+Wire Wire Line
+	6900 4700 6900 4750
 Wire Wire Line
 	6800 4700 6900 4700
 Connection ~ 6900 4700
-Wire Wire Line
-	5450 5100 5450 5150
 Wire Wire Line
 	4850 4750 4950 4750
 Wire Wire Line
@@ -1542,9 +1541,13 @@ Wire Wire Line
 Wire Wire Line
 	1650 4750 1850 4750
 Wire Wire Line
-	900  4050 1050 4050
+	900  4050 950  4050
 Wire Wire Line
-	900  4550 1050 4550
+	950  4050 1050 4050
+Wire Wire Line
+	900  4550 1000 4550
+Wire Wire Line
+	1000 4550 1050 4550
 Wire Wire Line
 	950  4350 1650 4350
 Wire Wire Line
@@ -1558,12 +1561,16 @@ Connection ~ 950  4050
 Wire Wire Line
 	4050 6700 4150 6700
 Wire Wire Line
-	4050 6700 4050 6850
+	4050 6700 4050 6800
+Wire Wire Line
+	4050 6800 4050 6850
 Wire Wire Line
 	4050 6800 4500 6800
 Connection ~ 4050 6800
 Wire Wire Line
-	4350 6500 4600 6500
+	4350 6500 4500 6500
+Wire Wire Line
+	4500 6500 4600 6500
 Connection ~ 4500 6500
 Wire Wire Line
 	4900 6500 4900 6700
@@ -1574,12 +1581,16 @@ Wire Wire Line
 Wire Wire Line
 	5550 6700 5650 6700
 Wire Wire Line
-	5550 6700 5550 6850
+	5550 6700 5550 6800
+Wire Wire Line
+	5550 6800 5550 6850
 Wire Wire Line
 	5550 6800 6000 6800
 Connection ~ 5550 6800
 Wire Wire Line
-	5850 6500 6100 6500
+	5850 6500 6000 6500
+Wire Wire Line
+	6000 6500 6100 6500
 Connection ~ 6000 6500
 Wire Wire Line
 	6400 6500 6400 6700
@@ -1590,12 +1601,16 @@ Wire Wire Line
 Wire Wire Line
 	4050 7400 4150 7400
 Wire Wire Line
-	4050 7400 4050 7550
+	4050 7400 4050 7500
+Wire Wire Line
+	4050 7500 4050 7550
 Wire Wire Line
 	4050 7500 4500 7500
 Connection ~ 4050 7500
 Wire Wire Line
-	4350 7200 4600 7200
+	4350 7200 4500 7200
+Wire Wire Line
+	4500 7200 4600 7200
 Connection ~ 4500 7200
 Wire Wire Line
 	4900 7200 4900 7400
@@ -1606,12 +1621,16 @@ Wire Wire Line
 Wire Wire Line
 	5550 7400 5650 7400
 Wire Wire Line
-	5550 7400 5550 7550
+	5550 7400 5550 7500
+Wire Wire Line
+	5550 7500 5550 7550
 Wire Wire Line
 	5550 7500 6000 7500
 Connection ~ 5550 7500
 Wire Wire Line
-	5850 7200 6100 7200
+	5850 7200 6000 7200
+Wire Wire Line
+	6000 7200 6100 7200
 Connection ~ 6000 7200
 Wire Wire Line
 	6400 7200 6400 7400
@@ -1626,12 +1645,16 @@ Wire Wire Line
 Wire Wire Line
 	2400 3600 2400 3500
 Wire Wire Line
-	1150 2850 1150 3500
+	1150 2850 1150 2950
+Wire Wire Line
+	1150 2950 1150 3500
 Wire Wire Line
 	1150 3500 1500 3500
 Connection ~ 1150 2950
 Wire Wire Line
-	800  2900 800  3000
+	800  2900 800  2950
+Wire Wire Line
+	800  2950 800  3000
 Wire Wire Line
 	800  2950 1150 2950
 Connection ~ 800  2950
@@ -1652,7 +1675,9 @@ Wire Wire Line
 Wire Wire Line
 	2450 1000 2450 1300
 Wire Wire Line
-	2000 1300 2500 1300
+	2000 1300 2450 1300
+Wire Wire Line
+	2450 1300 2500 1300
 Wire Wire Line
 	2300 950  2300 900 
 Wire Wire Line
@@ -1661,15 +1686,23 @@ Connection ~ 2450 1300
 Wire Wire Line
 	2000 1250 2000 1300
 Wire Wire Line
-	6000 1500 6500 1500
+	6000 1500 6200 1500
+Wire Wire Line
+	6200 1500 6500 1500
 Wire Wire Line
 	6200 1500 6200 1550
 Wire Wire Line
-	6500 1450 6500 1550
+	6500 1450 6500 1500
+Wire Wire Line
+	6500 1500 6500 1550
 Connection ~ 6200 1500
 Connection ~ 6500 1500
 Wire Wire Line
-	4250 1500 5100 1500
+	4250 1500 4350 1500
+Wire Wire Line
+	4350 1500 4650 1500
+Wire Wire Line
+	4650 1500 5100 1500
 Wire Wire Line
 	5100 1700 5100 1850
 Wire Wire Line
@@ -1687,7 +1720,9 @@ Connection ~ 4350 1500
 Wire Wire Line
 	3850 1500 3950 1500
 Wire Wire Line
-	3850 1250 3850 1550
+	3850 1250 3850 1500
+Wire Wire Line
+	3850 1500 3850 1550
 $Comp
 L +5V #PWR?
 U 1 1 5924C820
@@ -1700,7 +1735,6 @@ F 3 "" H 3850 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3850 1500
-NoConn ~ 4950 4650
 $Comp
 L R R?
 U 1 1 5924E8FD
@@ -1746,7 +1780,9 @@ F 3 "" H 8150 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 3150 8150 3250
+	8150 3150 8150 3200
+Wire Wire Line
+	8150 3200 8150 3250
 Text GLabel 8100 3200 0    60   Input ~ 0
 VBATT-LVL
 Connection ~ 8150 3200
@@ -1754,4 +1790,51 @@ Wire Wire Line
 	8100 3200 8150 3200
 Text GLabel 4950 3950 0    60   Input ~ 0
 VBATT-LVL
+Text GLabel 4100 3400 0    60   Input ~ 0
+MOSI(OLED)
+Text GLabel 4100 3550 0    60   Input ~ 0
+SCLK(OLED)
+Text GLabel 4100 3700 0    60   Input ~ 0
+MISO(OLED)
+Wire Wire Line
+	2900 6950 2900 6850
+Wire Wire Line
+	2900 6850 2950 6850
+Wire Wire Line
+	2900 7150 2900 7250
+Wire Wire Line
+	2900 7250 2950 7250
+Wire Wire Line
+	2950 7200 2950 7250
+Wire Wire Line
+	2950 7250 2950 7300
+Connection ~ 2950 7250
+Wire Wire Line
+	2950 6800 2950 6850
+Wire Wire Line
+	2950 6850 2950 6900
+Connection ~ 2950 6850
+Text Notes 850  6100 0    60   ~ 0
+SPI on Kolban pg. 219
+Wire Wire Line
+	5200 5150 5200 5100
+Wire Wire Line
+	5200 5100 5450 5100
+$Comp
+L ESP32-WROOM U?
+U 1 1 58FFAC78
+P 5900 4050
+F 0 "U?" H 5200 5300 60  0000 C CNN
+F 1 "ESP32-WROOM" H 6400 5300 60  0000 C CNN
+F 2 "ESP32-footprints-Lib:ESP32-WROOM" H 6250 5400 60  0001 C CNN
+F 3 "" H 5450 4500 60  0001 C CNN
+	1    5900 4050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5650 5100
+NoConn ~ 5750 5100
+NoConn ~ 5850 5100
+NoConn ~ 5950 5100
+NoConn ~ 6050 5100
+NoConn ~ 6150 5100
 $EndSCHEMATC
