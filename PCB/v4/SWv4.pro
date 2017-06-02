@@ -1,4 +1,4 @@
-update=Thu 01 Jun 2017 01:18:29 PM EDT
+update=Fri 02 Jun 2017 05:15:23 AM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -67,5 +67,6 @@ LibName37=micro_sd_card_spi
 LibName38=cp210x
 LibName39=mcp73831-2
 LibName40=AP2112
+LibName41=lsm9ds1
 [general]
 version=1

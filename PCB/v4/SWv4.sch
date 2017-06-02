@@ -39,6 +39,7 @@ LIBS:micro_sd_card_spi
 LIBS:cp210x
 LIBS:mcp73831-2
 LIBS:AP2112
+LIBS:lsm9ds1
 LIBS:SWv4-cache
 EELAYER 25 0
 EELAYER END
@@ -591,29 +592,29 @@ Text GLabel 9250 1100 0    60   Input ~ 0
 SDA
 Text Notes 9650 650  0    60   ~ 0
 Haptics
-Text GLabel 4100 3450 0    60   Input ~ 0
+Text GLabel 5500 2900 0    60   Input ~ 0
 BTN-TL
-Text GLabel 4100 3950 0    60   Input ~ 0
+Text GLabel 5500 3400 0    60   Input ~ 0
 BTN-BL
-Text GLabel 6950 3000 2    60   Input ~ 0
+Text GLabel 8350 2450 2    60   Input ~ 0
 BTN-TR
-Text GLabel 6950 4000 2    60   Input ~ 0
+Text GLabel 8500 3300 2    60   Input ~ 0
 BTN-BR
-Text GLabel 5950 4700 3    60   Input ~ 0
+Text GLabel 7350 4150 3    60   Input ~ 0
 CS(OLED)
-Text GLabel 5250 4700 3    60   Input ~ 0
+Text GLabel 6650 4150 3    60   Input ~ 0
 MOSI(OLED)
-Text GLabel 4650 4150 0    60   Input ~ 0
+Text GLabel 6050 3600 0    60   Input ~ 0
 SCLK(OLED)
-Text GLabel 6500 3700 2    60   Input ~ 0
+Text GLabel 7900 3150 2    60   Input ~ 0
 CS(SD)
-Text GLabel 6050 4700 3    60   Input ~ 0
+Text GLabel 7450 4150 3    60   Input ~ 0
 RST(OLED)
-Text GLabel 4650 4050 0    60   Input ~ 0
+Text GLabel 6050 3500 0    60   Input ~ 0
 D/C(OLED)
-Text GLabel 3600 3550 0    60   Input ~ 0
+Text GLabel 5000 3000 0    60   Input ~ 0
 SCL
-Text GLabel 3600 3700 0    60   Input ~ 0
+Text GLabel 5000 3150 0    60   Input ~ 0
 SDA
 Text GLabel 1800 1900 1    60   Input ~ 0
 TXD
@@ -621,32 +622,32 @@ Text GLabel 1900 1900 1    60   Input ~ 0
 RXD
 Text Notes 650  6250 0    60   ~ 0
 SD Card (SPI) - SD Interface Compat. ?
-Text GLabel 6500 3100 2    60   Input ~ 0
+Text GLabel 7900 2550 2    60   Input ~ 0
 TXD
-Text GLabel 6500 3200 2    60   Input ~ 0
+Text GLabel 7900 2650 2    60   Input ~ 0
 RXD
 Text Notes 650  2050 0    60   ~ 0
 USB Interface
 $Comp
 L +3V3 #PWR?
 U 1 1 5904C3E7
-P 4650 2700
-F 0 "#PWR?" H 4650 2550 50  0001 C CNN
-F 1 "+3V3" H 4650 2840 50  0000 C CNN
-F 2 "" H 4650 2700 50  0001 C CNN
-F 3 "" H 4650 2700 50  0001 C CNN
-	1    4650 2700
+P 6050 2150
+F 0 "#PWR?" H 6050 2000 50  0001 C CNN
+F 1 "+3V3" H 6050 2290 50  0000 C CNN
+F 2 "" H 6050 2150 50  0001 C CNN
+F 3 "" H 6050 2150 50  0001 C CNN
+	1    6050 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR?
 U 1 1 5904C8AB
-P 4900 4750
-F 0 "#PWR?" H 4900 4500 50  0001 C CNN
-F 1 "GND" H 4900 4600 50  0000 C CNN
-F 2 "" H 4900 4750 50  0001 C CNN
-F 3 "" H 4900 4750 50  0001 C CNN
-	1    4900 4750
+P 6300 4200
+F 0 "#PWR?" H 6300 3950 50  0001 C CNN
+F 1 "GND" H 6300 4050 50  0000 C CNN
+F 2 "" H 6300 4200 50  0001 C CNN
+F 3 "" H 6300 4200 50  0001 C CNN
+	1    6300 4200
 	1    0    0    -1  
 $EndComp
 Text GLabel 9250 1300 0    60   Input ~ 0
@@ -654,23 +655,23 @@ DRV_EN
 $Comp
 L GND #PWR?
 U 1 1 590C522C
-P 6600 4350
-F 0 "#PWR?" H 6600 4100 50  0001 C CNN
-F 1 "GND" H 6600 4200 50  0000 C CNN
-F 2 "" H 6600 4350 50  0001 C CNN
-F 3 "" H 6600 4350 50  0001 C CNN
-	1    6600 4350
+P 8000 3800
+F 0 "#PWR?" H 8000 3550 50  0001 C CNN
+F 1 "GND" H 8000 3650 50  0000 C CNN
+F 2 "" H 8000 3800 50  0001 C CNN
+F 3 "" H 8000 3800 50  0001 C CNN
+	1    8000 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR?
 U 1 1 590C6187
-P 4550 4350
-F 0 "#PWR?" H 4550 4100 50  0001 C CNN
-F 1 "GND" H 4550 4200 50  0000 C CNN
-F 2 "" H 4550 4350 50  0001 C CNN
-F 3 "" H 4550 4350 50  0001 C CNN
-	1    4550 4350
+P 5950 3800
+F 0 "#PWR?" H 5950 3550 50  0001 C CNN
+F 1 "GND" H 5950 3650 50  0000 C CNN
+F 2 "" H 5950 3800 50  0001 C CNN
+F 3 "" H 5950 3800 50  0001 C CNN
+	1    5950 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -686,11 +687,11 @@ F 3 "" H 1550 4050 50  0001 L CNN
 $EndComp
 Text GLabel 1850 3850 2    60   Input ~ 0
 ESP_EN
-Text GLabel 4650 3150 0    60   Input ~ 0
+Text GLabel 6050 2600 0    60   Input ~ 0
 ESP_EN
 Text GLabel 1850 4750 2    60   Input ~ 0
 IO0
-Text GLabel 6500 4100 2    60   Input ~ 0
+Text GLabel 7900 3550 2    60   Input ~ 0
 IO0
 Text GLabel 1600 1900 1    60   Input ~ 0
 DTR
@@ -1009,8 +1010,6 @@ Text Notes 6100 7700 0    60   ~ 0
 Buttons
 Text Notes 950  3900 0    60   ~ 0
 Auto Reset
-Text Notes 6750 4150 0    60   ~ 0
-Add BTN-?? here
 $Comp
 L CP2104 U?
 U 1 1 5923E2B4
@@ -1372,6 +1371,284 @@ F 3 "" H 4800 1350 50  0001 C CNN
 	1    4800 1350
 	1    0    0    -1  
 $EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5924C820
+P 4800 750
+F 0 "#PWR?" H 4800 600 50  0001 C CNN
+F 1 "+5V" H 4800 890 50  0000 C CNN
+F 2 "" H 4800 750 50  0001 C CNN
+F 3 "" H 4800 750 50  0001 C CNN
+	1    4800 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5924E8FD
+P 4150 2250
+F 0 "R?" V 4230 2250 50  0000 C CNN
+F 1 "100K" V 4150 2250 50  0000 C CNN
+F 2 "" V 4080 2250 50  0001 C CNN
+F 3 "" H 4150 2250 50  0001 C CNN
+	1    4150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5924EA32
+P 4150 2650
+F 0 "R?" V 4230 2650 50  0000 C CNN
+F 1 "100K" V 4150 2650 50  0000 C CNN
+F 2 "" V 4080 2650 50  0001 C CNN
+F 3 "" H 4150 2650 50  0001 C CNN
+	1    4150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5924EADE
+P 4150 2800
+F 0 "#PWR?" H 4150 2550 50  0001 C CNN
+F 1 "GND" H 4150 2650 50  0000 C CNN
+F 2 "" H 4150 2800 50  0001 C CNN
+F 3 "" H 4150 2800 50  0001 C CNN
+	1    4150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 5924EB66
+P 4150 2100
+F 0 "#PWR?" H 4150 1950 50  0001 C CNN
+F 1 "+BATT" H 4150 2240 50  0000 C CNN
+F 2 "" H 4150 2100 50  0001 C CNN
+F 3 "" H 4150 2100 50  0001 C CNN
+	1    4150 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 2450 0    60   Input ~ 0
+VBATT-LVL
+Text GLabel 5500 2750 0    60   Input ~ 0
+VBATT-LVL
+Text GLabel 7900 2350 2    60   Input ~ 0
+MOSI(SD)
+Text GLabel 7900 3050 2    60   Input ~ 0
+SCLK(SD)
+Text Notes 850  6100 0    60   ~ 0
+SPI on Kolban pg. 219
+$Comp
+L ESP32-WROOM U?
+U 1 1 58FFAC78
+P 7000 3100
+F 0 "U?" H 6300 4350 60  0000 C CNN
+F 1 "ESP32-WROOM" H 7500 4350 60  0000 C CNN
+F 2 "ESP32-footprints-Lib:ESP32-WROOM" H 7350 4450 60  0001 C CNN
+F 3 "" H 6550 3550 60  0001 C CNN
+	1    7000 3100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6750 4150
+NoConn ~ 6850 4150
+NoConn ~ 6950 4150
+NoConn ~ 7050 4150
+NoConn ~ 7150 4150
+NoConn ~ 7250 4150
+Text Notes 3500 2350 0    60   ~ 0
+Power Drain?
+Text GLabel 5000 3300 0    60   Input ~ 0
+DRV_EN
+Text GLabel 7900 2950 2    60   Input ~ 0
+MISO(SD)
+NoConn ~ 6050 3700
+$Comp
+L CONN_01X01 T?
+U 1 1 593078C7
+P 5400 4050
+F 0 "T?" H 5400 4150 50  0000 C CNN
+F 1 "TOUCH" V 5500 4050 50  0000 C CNN
+F 2 "" H 5400 4050 50  0001 C CNN
+F 3 "" H 5400 4050 50  0001 C CNN
+	1    5400 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L LSM9DS1 U?
+U 1 1 5931698C
+P 3850 5100
+F 0 "U?" H 3850 5100 60  0000 C CNN
+F 1 "LSM9DS1" V 4350 4700 60  0000 C CNN
+F 2 "" H 3850 4800 60  0001 C CNN
+F 3 "" H 3850 4800 60  0001 C CNN
+	1    3850 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59316BA9
+P 4500 5300
+F 0 "#PWR?" H 4500 5050 50  0001 C CNN
+F 1 "GND" H 4500 5150 50  0000 C CNN
+F 2 "" H 4500 5300 50  0001 C CNN
+F 3 "" H 4500 5300 50  0001 C CNN
+	1    4500 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3200 4950 0    60   Input ~ 0
+SCL
+Text GLabel 3200 5150 0    60   Input ~ 0
+SDA
+$Comp
+L +3V3 #PWR?
+U 1 1 59319B55
+P 3100 4150
+F 0 "#PWR?" H 3100 4000 50  0001 C CNN
+F 1 "+3V3" H 3100 4290 50  0000 C CNN
+F 2 "" H 3100 4150 50  0001 C CNN
+F 3 "" H 3100 4150 50  0001 C CNN
+	1    3100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5931A3A4
+P 3900 3800
+F 0 "C?" H 3925 3900 50  0000 L CNN
+F 1 "10uF" H 3925 3700 50  0000 L CNN
+F 2 "" H 3938 3650 50  0001 C CNN
+F 3 "" H 3900 3800 50  0001 C CNN
+	1    3900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5931A541
+P 4200 3800
+F 0 "C?" H 4225 3900 50  0000 L CNN
+F 1 "0.1uF" H 4225 3700 50  0000 L CNN
+F 2 "" H 4238 3650 50  0001 C CNN
+F 3 "" H 4200 3800 50  0001 C CNN
+	1    4200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5931A6F4
+P 3100 4400
+F 0 "C?" H 3125 4500 50  0000 L CNN
+F 1 "0.1uF" H 3125 4300 50  0000 L CNN
+F 2 "" H 3138 4250 50  0001 C CNN
+F 3 "" H 3100 4400 50  0001 C CNN
+	1    3100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5931AAF2
+P 4650 4350
+F 0 "C?" H 4675 4450 50  0000 L CNN
+F 1 "10nF" H 4675 4250 50  0000 L CNN
+F 2 "" H 4688 4200 50  0001 C CNN
+F 3 "" H 4650 4350 50  0001 C CNN
+	1    4650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5931AC27
+P 3900 3950
+F 0 "#PWR?" H 3900 3700 50  0001 C CNN
+F 1 "GND" H 3900 3800 50  0000 C CNN
+F 2 "" H 3900 3950 50  0001 C CNN
+F 3 "" H 3900 3950 50  0001 C CNN
+	1    3900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5931ACBB
+P 3100 4550
+F 0 "#PWR?" H 3100 4300 50  0001 C CNN
+F 1 "GND" H 3100 4400 50  0000 C CNN
+F 2 "" H 3100 4550 50  0001 C CNN
+F 3 "" H 3100 4550 50  0001 C CNN
+	1    3100 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5931AD4F
+P 4200 3950
+F 0 "#PWR?" H 4200 3700 50  0001 C CNN
+F 1 "GND" H 4200 3800 50  0000 C CNN
+F 2 "" H 4200 3950 50  0001 C CNN
+F 3 "" H 4200 3950 50  0001 C CNN
+	1    4200 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5931ADE3
+P 4650 4500
+F 0 "#PWR?" H 4650 4250 50  0001 C CNN
+F 1 "GND" H 4650 4350 50  0000 C CNN
+F 2 "" H 4650 4500 50  0001 C CNN
+F 3 "" H 4650 4500 50  0001 C CNN
+	1    4650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5931B96B
+P 3350 3800
+F 0 "C?" H 3375 3900 50  0000 L CNN
+F 1 "0.1uF" H 3375 3700 50  0000 L CNN
+F 2 "" H 3388 3650 50  0001 C CNN
+F 3 "" H 3350 3800 50  0001 C CNN
+	1    3350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5931BA4C
+P 3350 3950
+F 0 "#PWR?" H 3350 3700 50  0001 C CNN
+F 1 "GND" H 3350 3800 50  0000 C CNN
+F 2 "" H 3350 3950 50  0001 C CNN
+F 3 "" H 3350 3950 50  0001 C CNN
+	1    3350 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 5931D032
+P 4350 5950
+F 0 "#PWR?" H 4350 5800 50  0001 C CNN
+F 1 "+3V3" H 4350 6090 50  0000 C CNN
+F 2 "" H 4350 5950 50  0001 C CNN
+F 3 "" H 4350 5950 50  0001 C CNN
+	1    4350 5950
+	1    0    0    -1  
+$EndComp
+Text Notes 2350 5700 0    60   ~ 0
+Choose I2C Addresses\nw/ SDOs\n(see sparkfun_9dof)
+Text Notes 4800 2550 0    60   ~ 0
+EN/IO0 Switches?
+NoConn ~ 3800 5950
+NoConn ~ 3900 5950
+NoConn ~ 4000 5950
+NoConn ~ 4100 5950
+NoConn ~ 4200 5950
+Text Notes 2900 5900 0    60   ~ 0
+9DoF IMU
+NoConn ~ 10250 3150
+NoConn ~ 10250 3250
+NoConn ~ 10250 3550
+NoConn ~ 10250 3650
+NoConn ~ 10250 3750
+NoConn ~ 10250 3850
+NoConn ~ 10250 3950
+NoConn ~ 10250 4050
+NoConn ~ 4800 3800
 Wire Wire Line
 	10350 1000 10700 1000
 Wire Wire Line
@@ -1524,16 +1801,16 @@ Wire Wire Line
 Wire Wire Line
 	8500 900  9250 900 
 Wire Wire Line
-	6500 4200 6600 4200
+	7900 3650 8000 3650
 Wire Wire Line
-	6600 4200 6600 4300
+	8000 3650 8000 3750
 Wire Wire Line
-	6600 4300 6600 4350
+	8000 3750 8000 3800
 Wire Wire Line
-	6500 4300 6600 4300
-Connection ~ 6600 4300
+	7900 3750 8000 3750
+Connection ~ 8000 3750
 Wire Wire Line
-	4550 4350 4650 4350
+	5950 3800 6050 3800
 Wire Wire Line
 	1650 3850 1850 3850
 Wire Wire Line
@@ -1721,77 +1998,14 @@ Wire Wire Line
 	4800 750  4800 1000
 Wire Wire Line
 	4800 1000 4800 1050
-$Comp
-L +5V #PWR?
-U 1 1 5924C820
-P 4800 750
-F 0 "#PWR?" H 4800 600 50  0001 C CNN
-F 1 "+5V" H 4800 890 50  0000 C CNN
-F 2 "" H 4800 750 50  0001 C CNN
-F 3 "" H 4800 750 50  0001 C CNN
-	1    4800 750 
-	1    0    0    -1  
-$EndComp
 Connection ~ 4800 1000
-$Comp
-L R R?
-U 1 1 5924E8FD
-P 3750 2500
-F 0 "R?" V 3830 2500 50  0000 C CNN
-F 1 "100K" V 3750 2500 50  0000 C CNN
-F 2 "" V 3680 2500 50  0001 C CNN
-F 3 "" H 3750 2500 50  0001 C CNN
-	1    3750 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 5924EA32
-P 3750 2900
-F 0 "R?" V 3830 2900 50  0000 C CNN
-F 1 "100K" V 3750 2900 50  0000 C CNN
-F 2 "" V 3680 2900 50  0001 C CNN
-F 3 "" H 3750 2900 50  0001 C CNN
-	1    3750 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 5924EADE
-P 3750 3050
-F 0 "#PWR?" H 3750 2800 50  0001 C CNN
-F 1 "GND" H 3750 2900 50  0000 C CNN
-F 2 "" H 3750 3050 50  0001 C CNN
-F 3 "" H 3750 3050 50  0001 C CNN
-	1    3750 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L +BATT #PWR?
-U 1 1 5924EB66
-P 3750 2350
-F 0 "#PWR?" H 3750 2200 50  0001 C CNN
-F 1 "+BATT" H 3750 2490 50  0000 C CNN
-F 2 "" H 3750 2350 50  0001 C CNN
-F 3 "" H 3750 2350 50  0001 C CNN
-	1    3750 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3750 2650 3750 2700
+	4150 2400 4150 2450
 Wire Wire Line
-	3750 2700 3750 2750
-Text GLabel 3700 2700 0    60   Input ~ 0
-VBATT-LVL
-Connection ~ 3750 2700
+	4150 2450 4150 2500
+Connection ~ 4150 2450
 Wire Wire Line
-	3700 2700 3750 2700
-Text GLabel 4650 3350 0    60   Input ~ 0
-VBATT-LVL
-Text GLabel 6500 2900 2    60   Input ~ 0
-MOSI(SD)
-Text GLabel 6500 3600 2    60   Input ~ 0
-SCLK(SD)
+	4100 2450 4150 2450
 Wire Wire Line
 	2900 6950 2900 6850
 Wire Wire Line
@@ -1810,56 +2024,82 @@ Wire Wire Line
 Wire Wire Line
 	2950 6850 2950 6900
 Connection ~ 2950 6850
-Text Notes 850  6100 0    60   ~ 0
-SPI on Kolban pg. 219
 Wire Wire Line
-	4900 4750 4900 4700
+	6300 4200 6300 4150
 Wire Wire Line
-	4900 4700 5150 4700
-$Comp
-L ESP32-WROOM U?
-U 1 1 58FFAC78
-P 5600 3650
-F 0 "U?" H 4900 4900 60  0000 C CNN
-F 1 "ESP32-WROOM" H 6100 4900 60  0000 C CNN
-F 2 "ESP32-footprints-Lib:ESP32-WROOM" H 5950 5000 60  0001 C CNN
-F 3 "" H 5150 4100 60  0001 C CNN
-	1    5600 3650
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5350 4700
-NoConn ~ 5450 4700
-NoConn ~ 5550 4700
-NoConn ~ 5650 4700
-NoConn ~ 5750 4700
-NoConn ~ 5850 4700
-Text Notes 3100 2600 0    60   ~ 0
-Power Drain?
-Text GLabel 3600 3850 0    60   Input ~ 0
-DRV_EN
-Text GLabel 6500 3500 2    60   Input ~ 0
-MISO(SD)
-NoConn ~ 4650 4250
-$Comp
-L CONN_01X01 T?
-U 1 1 593078C7
-P 3350 4350
-F 0 "T?" H 3350 4450 50  0000 C CNN
-F 1 "TOUCH-1" V 3450 4350 50  0000 C CNN
-F 2 "" H 3350 4350 50  0001 C CNN
-F 3 "" H 3350 4350 50  0001 C CNN
-	1    3350 4350
-	-1   0    0    1   
-$EndComp
-$Comp
-L CONN_01X01 T?
-U 1 1 59307C4B
-P 3350 4800
-F 0 "T?" H 3350 4900 50  0000 C CNN
-F 1 "TOUCH-2" V 3450 4800 50  0000 C CNN
-F 2 "" H 3350 4800 50  0001 C CNN
-F 3 "" H 3350 4800 50  0001 C CNN
-	1    3350 4800
-	-1   0    0    1   
-$EndComp
+	6300 4150 6550 4150
+Wire Wire Line
+	4000 4300 4100 4300
+Wire Wire Line
+	4100 4300 4200 4300
+Wire Wire Line
+	4200 4300 4500 4300
+Wire Wire Line
+	4500 4300 4500 4950
+Wire Wire Line
+	4500 4950 4500 5050
+Wire Wire Line
+	4500 5050 4500 5150
+Wire Wire Line
+	4500 5150 4500 5250
+Wire Wire Line
+	4500 5250 4500 5300
+Connection ~ 4500 4950
+Connection ~ 4500 5050
+Connection ~ 4500 5150
+Connection ~ 4500 5250
+Wire Wire Line
+	3700 4300 3750 4300
+Wire Wire Line
+	3750 4300 3800 4300
+Connection ~ 4200 4300
+Connection ~ 4100 4300
+Wire Wire Line
+	3900 3650 4050 3650
+Wire Wire Line
+	4050 3650 4200 3650
+Wire Wire Line
+	3100 4150 3100 4200
+Wire Wire Line
+	3100 4200 3100 4250
+Connection ~ 3100 4200
+Wire Wire Line
+	3500 4200 3500 4300
+Wire Wire Line
+	2900 4200 3100 4200
+Wire Wire Line
+	3100 4200 3500 4200
+Wire Wire Line
+	2900 4200 2900 5050
+Wire Wire Line
+	2900 5050 3200 5050
+Wire Wire Line
+	3600 4300 3600 3650
+Wire Wire Line
+	3600 3650 3350 3650
+Wire Wire Line
+	3900 4300 3900 4200
+Wire Wire Line
+	3900 4200 4650 4200
+Wire Wire Line
+	3750 4300 3750 3600
+Wire Wire Line
+	3750 3600 4050 3600
+Wire Wire Line
+	4050 3600 4050 3650
+Connection ~ 4050 3650
+Connection ~ 3750 4300
+Wire Wire Line
+	3600 6050 3600 5950
+Wire Wire Line
+	3700 6050 3700 5950
+Wire Wire Line
+	3600 6050 3700 6050
+Wire Wire Line
+	3700 6050 4350 6050
+Wire Wire Line
+	4350 6050 4350 5950
+Connection ~ 3700 6050
+Text Notes 4700 2400 0    60   ~ 0
+gpio 34-39 are input only!
 $EndSCHEMATC
